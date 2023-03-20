@@ -2,7 +2,7 @@ package hu.bme.mit.train.interfaces;
 
 public interface TrainController {
 
-	void followSpeeeed();
+	void followSpeed();
 
 	int getReferenceSpeed();
 
