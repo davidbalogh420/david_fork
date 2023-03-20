@@ -8,7 +8,7 @@ public interface TrainController {
 
 	void setSpeedLimit(int speedLimit);
 
-	void setReferenceSpeed(int a);
+	
 
 	void setJoystickPosition(int joystickPosition);
 	
