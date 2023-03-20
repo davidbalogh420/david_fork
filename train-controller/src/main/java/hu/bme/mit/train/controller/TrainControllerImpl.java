@@ -7,7 +7,7 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
-	private int emergencySpeed=0;
+	//private int emergencySpeed=0;
 	private boolean obstacle=false;
 
 	@Override
@@ -27,9 +27,9 @@ public class TrainControllerImpl implements TrainController {
 
 		enforceSpeedLimit();
 	}
-	else{
-		emergencyBreakOn();
-	}
+	// else{
+	// 	emergencyBreakOn();
+	// }
 	}
 
 	@Override
@@ -73,14 +73,14 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	
-	public void emergencyBreakOn(){
+	// public void emergencyBreakOn(){
 		
-		setSpeedLimit(emergencySpeed);
-	}
+	// 	setSpeedLimit(emergencySpeed);
+	// }
 
-	public void emergencyBreakOff(){
-		setSpeedLimit(speedLimit);
-	}
+	// public void emergencyBreakOff(){
+	// 	setSpeedLimit(speedLimit);
+	// }
 
 
 
