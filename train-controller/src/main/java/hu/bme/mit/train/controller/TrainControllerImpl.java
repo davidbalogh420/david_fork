@@ -7,14 +7,13 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
-	//private int emergencySpeed=0;
-	//private boolean obstacle=false;
+	
 
 	@Override
 	public void followSpeed() {
 
 		
-			//emergencyBreakOff();
+		
 		if (referenceSpeed < 0) {
 			referenceSpeed = 0;
 		} else {
@@ -57,17 +56,7 @@ public class TrainControllerImpl implements TrainController {
 		this.step = joystickPosition;		
 	}
 
-	public void toggleObstacle(boolean ob){
-		if(ob==false){
-			obstacle=true;
-			return;
-		}
-
-		obstacle=false;
-		return;
-
-
-	}
+	
 
 
 
