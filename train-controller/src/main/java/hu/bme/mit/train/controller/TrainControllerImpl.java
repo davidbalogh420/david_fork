@@ -79,7 +79,7 @@ public class TrainControllerImpl implements TrainController {
 	}
 
 	public void emergencyBreakOff(){
-		overrideSpeedLimit(speedLimit);
+		setSpeedLimit(speedLimit);
 	}
 
 
