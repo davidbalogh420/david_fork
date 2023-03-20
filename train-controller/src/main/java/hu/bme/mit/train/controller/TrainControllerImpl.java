@@ -8,12 +8,12 @@ public class TrainControllerImpl implements TrainController {
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
 	//private int emergencySpeed=0;
-	private boolean obstacle=false;
+	//private boolean obstacle=false;
 
 	@Override
 	public void followSpeed() {
 
-		if (!obstacle){
+		
 			emergencyBreakOff();
 		if (referenceSpeed < 0) {
 			referenceSpeed = 0;
@@ -27,9 +27,6 @@ public class TrainControllerImpl implements TrainController {
 
 		enforceSpeedLimit();
 	}
-	// else{
-	// 	emergencyBreakOn();
-	// }
 	}
 
 	@Override
@@ -72,15 +69,6 @@ public class TrainControllerImpl implements TrainController {
 
 	}
 
-	
-	// public void emergencyBreakOn(){
-		
-	// 	setSpeedLimit(emergencySpeed);
-	// }
-
-	// public void emergencyBreakOff(){
-	// 	setSpeedLimit(speedLimit);
-	// }
 
 
 
