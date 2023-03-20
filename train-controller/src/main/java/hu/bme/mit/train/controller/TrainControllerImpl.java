@@ -14,7 +14,7 @@ public class TrainControllerImpl implements TrainController {
 	public void followSpeed() {
 
 		
-			emergencyBreakOff();
+			//emergencyBreakOff();
 		if (referenceSpeed < 0) {
 			referenceSpeed = 0;
 		} else {
