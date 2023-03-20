@@ -7,13 +7,9 @@ public class TrainControllerImpl implements TrainController {
 	private int step = 0;
 	private int referenceSpeed = 0;
 	private int speedLimit = 0;
-	
 
 	@Override
 	public void followSpeed() {
-
-		
-		
 		if (referenceSpeed < 0) {
 			referenceSpeed = 0;
 		} else {
@@ -26,18 +22,17 @@ public class TrainControllerImpl implements TrainController {
 
 		enforceSpeedLimit();
 	}
-	
 
 	@Override
 	public int getReferenceSpeed() {
 		return referenceSpeed;
 	}
 
+	@Override
 	public void setReferenceSpeed(int a){
-		referenceSpeed=a;
+		this.referenceSpeed= a;
 	}
 
-	
 	@Override
 	public void setSpeedLimit(int speedLimit) {
 		this.speedLimit = speedLimit;
@@ -55,11 +50,5 @@ public class TrainControllerImpl implements TrainController {
 	public void setJoystickPosition(int joystickPosition) {
 		this.step = joystickPosition;		
 	}
-
-	
-
-
-
-
 
 }
